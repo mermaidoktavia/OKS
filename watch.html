@@ -20,13 +20,13 @@ video {
 background:url(offline.jpeg) no-repeat center center;
 }
 .overflow{overflow:auto}
-span.gradient-border {
+iframe {
 --borderWidth: 3px;
   background: #1D1F20;
   position: relative;
   border-radius: var(--borderWidth);
-}
-span.gradient-border:after {
+} 
+iframe:after {
   content: '';
   position: absolute;
   top: calc(-1 * var(--borderWidth));
