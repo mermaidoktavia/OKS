@@ -23,30 +23,16 @@ background:url(offline.jpeg) no-repeat center center;
 .left{float:left} 
 .right{float:right}
 html,body{margin:0px;padding:0px}
-#thing{    border: 1px solid #2d2d2d;
+#thing{
     padding: 20px;
     width: 90%;
     height: 85%;
     margin-top: 15px;
-    border-radius: 7px;}
-a{    color: #82bf56;
-    text-decoration: none;}
-body{font-family:arial}
-.extra {display: inline-block;
-    line-height: 50px;
-    vertical-align: top;
-    margin-left: 30px;
-    font-size: 55px;
-    padding: 10px 30px;
-    height: 47px;
-    border-radius: 7px;color: #333;}
-  .left {
-  --borderWidth: 3px;
-  background: #1D1F20;
-  position: relative;
-  border-radius: var(--borderWidth);
-}
-.left:after {
+    --borderWidth: 3px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);}
+  #thing:after{
   content: '';
   position: absolute;
   top: calc(-1 * var(--borderWidth));
@@ -59,6 +45,17 @@ body{font-family:arial}
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
 }
+a{    color: #82bf56;
+    text-decoration: none;}
+body{font-family:arial}
+.extra {display: inline-block;
+    line-height: 50px;
+    vertical-align: top;
+    margin-left: 30px;
+    font-size: 55px;
+    padding: 10px 30px;
+    height: 47px;
+    border-radius: 7px;color: #333;}
   
 
 @keyframes animatedgradient {
