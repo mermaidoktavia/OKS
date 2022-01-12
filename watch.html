@@ -20,17 +20,14 @@ video {
 background:url(offline.jpeg) no-repeat center center;
 }
 .overflow{overflow:auto}
-.left{float:left} 
-.right{float:right}
-html,body{margin:0px;padding:0px}
-#thing{
-    --borderWidth: 3px;
-    padding:15px;
-    background:#ffffff;
-    opacity: 0.4;
-    position: relative;
-    border-radius: var(--borderWidth);}
-#thing:after{
+.left {
+  float:left;
+--borderWidth: 3px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.left:after {
   content: '';
   position: absolute;
   top: calc(-1 * var(--borderWidth));
@@ -40,9 +37,18 @@ html,body{margin:0px;padding:0px}
   background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
-  animation: animatedgradient 3s ease alternate infinite;
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+          animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
 }
+.right{float:right}
+html,body{margin:0px;padding:0px}
+#thing{
+    padding: 20px;
+    width: 90%;
+    height: 85%;
+    margin-top: 15px;
+  }
 a{    color: #82bf56;
     text-decoration: none;}
 body{font-family:arial}
