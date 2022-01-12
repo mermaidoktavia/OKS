@@ -26,16 +26,14 @@ background:url(offline.jpeg) no-repeat center center;
 html,body{margin:0px;padding:0px}
 #thing{
     display: flex;
-    overflow: auto;
-    align-items: center;
-    padding: 10px;
-    width: 95%;
+    position: relative;
+    width: 100%;
     height: 88%;
   }
 #gradient-border {
   --borderWidth: 5px;
-  background: #ffffff;
   position: relative;
+  width: relative;
   margin-top: 5px;
 
   border-radius: var(--borderWidth);
@@ -97,7 +95,7 @@ body{font-family:arial}
 
 
 <div class="cont overflow">
-<div class="left" style="width:70%;margin:20px">
+<div class="left" style="width:50%;margin:20px">
 <video controls autoplay width="100%">
   <source src="YOUR_VIDEO_STREAM_LINK_HERE" type="video/webm">
   Your browser does not support the video tag.
