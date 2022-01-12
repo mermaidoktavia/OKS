@@ -20,14 +20,13 @@ video {
 background:url(offline.jpeg) no-repeat center center;
 }
 .overflow{overflow:auto}
-.left {
-  float:left;
+span.gradient-border {
 --borderWidth: 3px;
   background: #1D1F20;
   position: relative;
   border-radius: var(--borderWidth);
 }
-.left:after {
+span.gradient-border:after {
   content: '';
   position: absolute;
   top: calc(-1 * var(--borderWidth));
@@ -41,6 +40,7 @@ background:url(offline.jpeg) no-repeat center center;
           animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
 }
+.left{float:left}
 .right{float:right}
 html,body{margin:0px;padding:0px}
 #thing{
@@ -109,10 +109,10 @@ body{font-family:arial}
 Designed and Coded by <i class="fa fa-coffee" aria-hidden="true"></i> &nbsp;<a href="https://gibranali.com" target="_blank">Gibran Ali</a>
 </div>
 </div>
-
-<div class="left" style="width:25%;padding-top:15px">
+<div class="left" style="width:25%;padding-top:15px"><span class="gradient-border>
 <iframe width="99%" height="99%" src="https://www.youtube.com/live_chat?is_popout=1&v=RI7IVfot-qs&embed_domain=mermaidoktavia.github.io" id="thing"></iframe>
 </div>
+  </span>
 </div>
 
 </body>
